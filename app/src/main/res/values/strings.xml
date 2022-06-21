@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="activity_life_cycle">Activity Life Cycle</string>
+    <string name="fragment_one">Fragment One</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_two">Fragment Two</string>
+    <string name="hello_item">Hello Item</string>
+    <string name="recyclerview">RecyclerView</string>
+    <string name="api_calling">API Calling</string>
+    <string name="permission">Permission of Location and SMS</string>
+    <string name="onstart">onStart Method Call</string>
+    <string name="onrestart">onRestart Method Call</string>
+    <string name="onpause">onPause Method Call</string>
+    <string name="onresume">onResume Method Call</string>
+    <string name="onstop">onStop Method Call</string>
+    <string name="ondestroy">onDestroy Method Call</string>
+    <string name="oncreate">onCreate Method Call</string>
+    <string name="activitylifecycle">activityLifeCycle</string>
+    <string name="camera_permission">Camera Permission</string>
+    <string name="storage_permission">Storage Permission</string>
+    <string name="sqlite_database">SQLite Database</string>
+    <string name="enter_name">Enter Namr</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="insert">Insert</string>
+    <string name="display">Display</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="item_year">item Year</string>
+    <string name="responsefail">Response fail</string>
+    <string name="response">response</string>
+    <string name="responsesuccess">Response Success</string>
+    <string name="login_api_calling">Login API Calling</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="login">Login</string>
+    <string name="api_calling_with_coroutine">API Calling With Coroutine</string>
+</resources>

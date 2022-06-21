@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_line_begin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_line_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_fragment_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/fragment_one"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/guide_line_end"
+            app:layout_constraintStart_toStartOf="@id/guide_line_begin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_fragment_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_two"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@id/guide_line_end"
+            app:layout_constraintStart_toStartOf="@id/guide_line_begin"
+            app:layout_constraintTop_toBottomOf="@+id/btn_fragment_one" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_container_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/recyclerview"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@id/guide_line_end"
+            app:layout_constraintStart_toStartOf="@id/guide_line_begin"
+            app:layout_constraintTop_toBottomOf="@+id/btn_fragment_two" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_location_and_sms_permission"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/permission"
+            app:layout_constraintEnd_toEndOf="@id/guide_line_end"
+            app:layout_constraintStart_toStartOf="@id/guide_line_begin"
+            app:layout_constraintTop_toBottomOf="@+id/btn_recycler_view" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_camera_permission"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/camera_permission"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@id/guide_line_end"
+            app:layout_constraintStart_toStartOf="@id/guide_line_begin"
+            app:layout_constraintTop_toBottomOf="@+id/btn_location_and_sms_permission" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_storage_permission"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/storage_permission"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@id/guide_line_end"
+            app:layout_constraintStart_toStartOf="@id/guide_line_begin"
+            app:layout_constraintTop_toBottomOf="@+id/btn_camera_permission" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_sqlite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sqlite_database"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@id/guide_line_end"
+            app:layout_constraintStart_toStartOf="@id/guide_line_begin"
+            app:layout_constraintTop_toBottomOf="@+id/btn_storage_permission" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_api_calling"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/api_calling"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@id/guide_line_end"
+            app:layout_constraintStart_toStartOf="@id/guide_line_begin"
+            app:layout_constraintTop_toBottomOf="@+id/btn_sqlite" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login_api_calling"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login_api_calling"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@id/guide_line_end"
+            app:layout_constraintStart_toStartOf="@id/guide_line_begin"
+            app:layout_constraintTop_toBottomOf="@+id/btn_api_calling" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_coroutine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/api_calling_with_coroutine"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@id/guide_line_end"
+            app:layout_constraintStart_toStartOf="@id/guide_line_begin"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login_api_calling" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
