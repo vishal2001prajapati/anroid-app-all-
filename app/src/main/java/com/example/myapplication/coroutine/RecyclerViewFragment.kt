@@ -32,8 +32,9 @@ class RecyclerViewFragment : Fragment() {
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerView)
         val recyclerViewSecond = view.findViewById<RecyclerView>(R.id.recyclerViewSecond)
 //        recyclerView.layoutManager = LinearLayoutManager(activity)
-//        val decoration = DividerItemDecoration(activity, DividerItemDecoration.VERTICAL)
+//        val decoration = DividerItemDecoration(activity, DividerItemDecoration.HORIZONTAL)
 //        recyclerView.addItemDecoration(decoration)
+//        recyclerViewSecond.addItemDecoration(decoration)
         recyclerViewAdapter = CoroutineAdapter()
         recyclerViewAdapterSecond = CoroutineAdapter()
 

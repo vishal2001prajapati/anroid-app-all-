@@ -129,6 +129,16 @@
             app:layout_constraintStart_toStartOf="@id/guide_line_begin"
             app:layout_constraintTop_toBottomOf="@+id/btn_login_api_calling" />
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_paging"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/paging"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@id/guide_line_end"
+            app:layout_constraintStart_toStartOf="@id/guide_line_begin"
+            app:layout_constraintTop_toBottomOf="@+id/btn_coroutine" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

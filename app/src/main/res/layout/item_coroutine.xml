@@ -40,4 +40,13 @@
         app:layout_constraintTop_toBottomOf="@id/item_coroutine_text"
         tools:text="Description" />
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_coroutine_description_text" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

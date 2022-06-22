@@ -73,6 +73,7 @@ dependencies {
 
     // Coroutines
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1"
 
     //implementation "android.arch.lifecycle:extensions:1.1.1"
     //    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
@@ -82,4 +83,9 @@ dependencies {
         implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-rc02"
     // LiveData
     //    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.0-rc01"
+
+    // Paging3
+// Android Jetpack Paging 3.0
+    implementation "androidx.paging:paging-runtime:3.2.0-alpha01"
+
 }

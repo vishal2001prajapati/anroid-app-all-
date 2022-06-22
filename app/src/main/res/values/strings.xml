@@ -33,4 +33,5 @@
     <string name="enter_email_address">Enter Email Address</string>
     <string name="login">Login</string>
     <string name="api_calling_with_coroutine">API Calling With Coroutine</string>
+    <string name="paging">Paging3</string>
 </resources>
