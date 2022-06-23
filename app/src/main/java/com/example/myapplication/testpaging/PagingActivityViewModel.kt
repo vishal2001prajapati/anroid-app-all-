@@ -13,7 +13,7 @@ class PagingActivityViewModel: ViewModel() {
     var retroService: RetroService = RetroInstance.getRetroInstance().create(RetroService::class.java)
 
     fun getListData(): Flow<PagingData<NewUserDetailsList>> {
-        return Pager (config = PagingConfig(pageSize = 2, maxSize = 200),
+        return Pager (config = PagingConfig(pageSize = 1, maxSize = 200),
             pagingSourceFactory = {CharacterPagingSource(retroService)}).flow.cachedIn(viewModelScope)
     }
 

@@ -7,6 +7,6 @@ import retrofit2.http.Query
 
 interface RetroService {
 
-    @GET("api/users")
-    suspend fun getResponse(@Query("page") page: Int): RickAndMortyList
+    @GET("users")
+    suspend fun getResponse(@Query("page") page: Int, @Query("results") results: Int): RickAndMortyList
 }

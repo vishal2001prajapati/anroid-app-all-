@@ -34,4 +34,7 @@
     <string name="login">Login</string>
     <string name="api_calling_with_coroutine">API Calling With Coroutine</string>
     <string name="paging">Paging3</string>
+    <string name="sign_in">Sign In With Google</string>
+    <string name="logout">Logout</string>
+    <string name="google_signin">Google SignIn</string>
 </resources>

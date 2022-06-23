@@ -3,7 +3,7 @@ package com.example.myapplication.testpaging
 import com.example.myapplication.apicalling.Support
 import com.google.gson.annotations.SerializedName
 
-data class RickAndMortyList(val info: ListOfUser, val results: List<NewUserDetailsList> )
+data class RickAndMortyList(val info: NewListOfUser, val results: List<NewUserDetailsList> )
 
 data class NewUserDetailsList(
     val avatar: String,
@@ -15,7 +15,7 @@ data class NewUserDetailsList(
     val lastName: String
 )
 
-data class ListOfUser(
+data class NewListOfUser(
     val `data`: List<NewUserDetailsList>,
     val page: Int,
     val per_page: Int,

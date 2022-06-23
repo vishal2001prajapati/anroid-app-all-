@@ -18,6 +18,7 @@ import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.fragment.DemoOneFragment
 import com.example.myapplication.fragment.DemoTwoFragment
 import com.example.myapplication.recyclerview.RecyclerViewActivity
+import com.example.myapplication.signwithgoogle.GoogleSignInActivity
 import com.example.myapplication.sqlite.SqliteActivity
 import com.example.myapplication.testpaging.TestPagingActivity
 import kotlinx.coroutines.CoroutineScope
@@ -73,6 +74,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnPaging.setOnClickListener {
             val intent = Intent(this, TestPagingActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnGoogleSignin.setOnClickListener {
+            val intent = Intent(this, GoogleSignInActivity::class.java)
             startActivity(intent)
         }
 

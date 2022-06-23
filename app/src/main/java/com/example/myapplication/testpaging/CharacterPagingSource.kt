@@ -8,14 +8,17 @@ class CharacterPagingSource(private val apiService: RetroService) : PagingSource
 
 
     override fun getRefreshKey(state: PagingState<Int, NewUserDetailsList>): Int? {
-        return state.anchorPosition
+        return state.anchorPosition?.let { anchorPosition ->
+            state.closestPageToPosition(anchorPosition)?.prevKey?.plus(1)
+                ?: state.closestPageToPosition(anchorPosition)?.nextKey?.minus(1)
+        }
     }
 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, NewUserDetailsList> {
 
         return try {
             val nextPage: Int = params.key ?: FIRST_PAGE_INDEX
-            val response = apiService.getResponse(params.loadSize)
+            val response = apiService.getResponse(page = 1,params.loadSize)
             LoadResult.Page(data = response.info.data, prevKey = if (nextPage == 1) null else nextPage.minus(1), nextKey = if (response.info.data.isEmpty()) null else nextPage.plus(1))
         } catch (exception: Exception) {
             return LoadResult.Error(exception)

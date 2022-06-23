@@ -15,14 +15,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="20dp" />
+            app:layout_constraintGuide_begin="@dimen/_16sdp" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guide_line_end"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_end="20dp" />
+            app:layout_constraintGuide_end="@dimen/_16sdp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_fragment_one"
@@ -138,6 +138,16 @@
             app:layout_constraintEnd_toEndOf="@id/guide_line_end"
             app:layout_constraintStart_toStartOf="@id/guide_line_begin"
             app:layout_constraintTop_toBottomOf="@+id/btn_coroutine" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_google_signin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/google_signin"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@id/guide_line_end"
+            app:layout_constraintStart_toStartOf="@id/guide_line_begin"
+            app:layout_constraintTop_toBottomOf="@+id/btn_paging" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
